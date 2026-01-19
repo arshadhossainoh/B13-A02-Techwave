@@ -11,7 +11,7 @@
 
 /* navbar related styles */
 .navbar {
-  /* max-width: 1600px; */
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #1a0b2e;
   color: white;
@@ -67,13 +67,74 @@
 .banner {
   background-image: url(./assets/hero-bg.png);
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  width: 1600px;
-  height: 760px;
+  background-size: cover;
+  background-position: center;
+
+  /* background-size: cover;
+  background-position: center; */
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 600px;
 }
 
 .banner-content {
   text-align: center;
+  /* padding-top: 80px; */
+}
+
+.banner-content .mic {
+  background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  padding: 50px;
+  border-radius: 70%;
+  border: none;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+.banner-btn {
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content .btn-new {
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.banner-content h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.banner-content p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.btn-spotify,
+.btn-sub {
+  padding: 5px;
+  border-radius: 30px;
+  /* text-align: center; */
+}
+
+.btn-spotify {
+  background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  color: white;
+}
+
+.btn-sub {
+  background-color: #1a0b2e;
+  color: green;
+}
+
+.banner-btn .btn-new {
+  margin-left: -20px;
+  margin-top: -70px;
+  background-color: green;
+  color: white;
 }
 
 /* responsive media query */
