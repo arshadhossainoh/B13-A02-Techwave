@@ -173,7 +173,7 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .card h4 {
@@ -184,6 +184,75 @@
 .card p {
   font-size: 0.75rem;
   color: white;
+}
+
+/* why choose techwave section */
+.choose {
+  background-color: #230e3d;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.choose-container {
+  /* max-width: 700px; */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choose-container h3 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.grid-container > * {
+  border: 3px solid #1a0b2e;
+  background-color: #230e3d;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+.grid-container h4 {
+  font-size: 1rem;
+}
+
+.grid-container p {
+  font-size: 0.75rem;
+}
+
+.premium {
+  grid-area: premium;
+}
+
+.mobile {
+  grid-area: mobile;
+}
+
+.global {
+  grid-area: global;
+}
+
+.interviews {
+  grid-area: interviews;
+}
+
+.rich {
+  grid-area: rich;
+}
+
+.grid-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  display: grid;
+  gap: 10px;
+  text-align: left;
+  grid-template-areas:
+    "premium    mobile    mobile "
+    "premium    global    global "
+    "interviews interviews rich";
 }
 
 /* responsive media query */
@@ -201,5 +270,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "premium"
+      "mobile"
+      "global"
+      "sidebar"
+      "interviews"
+      "rich";
   }
 }
