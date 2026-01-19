@@ -303,6 +303,22 @@ iframe {
   border-radius: 10px;
 }
 
+/* host related styles */
+.host {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.host h3 {
+  padding-bottom: 20px;
+}
+
+.host-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar .nav-link,
