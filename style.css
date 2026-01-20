@@ -297,9 +297,9 @@
 }
 
 iframe {
-  width: 300px; /* Set a specific width in pixels */
-  height: 200px; /* Set a specific height in pixels */
-  border: 1px solid black; /* Optional: adds a border to see the boundaries */
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
   border-radius: 10px;
 }
 
@@ -342,6 +342,46 @@ iframe {
   padding-top: 10px;
   display: flex;
   gap: 20px;
+}
+
+/* footer section styles */
+.footer {
+  background-image: url(./assets/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 200px;
+
+  text-align: center;
+}
+
+.footer h3 {
+  padding-top: 60px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.footer-social p {
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.all-rights {
+  color: white;
 }
 
 /* responsive media query */
